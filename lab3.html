@@ -1,0 +1,44 @@
+
+<!-- Combined file html+css+JS -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab_03</title>
+</head>
+
+<body>
+    <h3>Lab 03 (Poor Feedback Design)</h3>
+    <button id="actionBtn" onclick="performAction()" style="padding: 10px 20px; margin: 10px 0;"
+        onmouseover="this.style.backgroundColor='#e0e0e0'" onmouseout="this.style.backgroundColor=''">
+        Process Data
+    </button>
+    <div id="status" style="margin-top: 10px;"></div>
+    <script>
+        let count = 0;
+        const btn = document.getElementById("actionBtn");
+        const status = document.getElementById("status");
+
+        function performAction() {
+            count++;
+            btn.style.transform = "scale(0.95)";
+            setTimeout(() => btn.style.transform = "", 100);
+
+            if (count > 2) {
+                btn.disabled = true;
+                btn.style.opacity = "0.5";
+                status.innerHTML = '<span style="color: red;">⚠️ Limit reached!</span>';
+            } else {
+                status.innerHTML = `✅ Processed ${count} time${count > 1 ? 's' : ''}`;
+            }
+        }
+    </script>
+</body>
+
+</html> -->
